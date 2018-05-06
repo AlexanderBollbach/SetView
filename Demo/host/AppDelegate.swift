@@ -14,23 +14,29 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 class DemoViewController: UIViewController {
     
+    let turtleView = TurtleView()
+    let r = BruteForceRenderer()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let sv = SetView(key: 0)
+        turtleView.pinTo(superView: view, insetBy: 0)
+        
+        
+        
+        
+        
+        
+        
+    }
+    override func viewDidAppear(_ animated: Bool) {
         
         let elements = [
-            Element(id: 1, title: "one"),
-            Element(id: 2, title: "two"),
-        ]
-        
-        sv.render(elements: elements)
-        
-        let newElements = [
-            Element(id: 2, title: "two"),
-            Element(id: 3, title: "three"),
+            Turtle(key: 1, title: "one", elementType: .label("test")),
+            Turtle(key: 2, title: "two", elementType: .label("test")),
             ]
         
-        sv.render(elements: newElements)
+        r.render(turtles: elements, in: turtleView)
     }
+
 }

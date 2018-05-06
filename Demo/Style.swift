@@ -1,6 +1,6 @@
 import Foundation
 
-struct SetViewStyle {
+struct TurtleViewStyle {
     
     enum Distribution {
         case evenSpacing

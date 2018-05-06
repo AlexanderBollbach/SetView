@@ -12,13 +12,13 @@
 		292E5DB7209FA04C00561451 /* TurtleKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 292E5DA2209FA04B00561451 /* TurtleKit.framework */; };
 		292E5DB8209FA04C00561451 /* TurtleKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 292E5DA2209FA04B00561451 /* TurtleKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		292E5DC2209FA1E500561451 /* TurtleFoo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292E5DC0209FA1C800561451 /* TurtleFoo.swift */; };
-		298BC326209BD82D009D2990 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298BC325209BD82D009D2990 /* UIView+Extensions.swift */; };
+		292E5DF7209FAEBF00561451 /* TurtleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2995A024209977FA005D1336 /* TurtleView.swift */; };
+		292E5DF8209FAEBF00561451 /* ElementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2995A02A209A8837005D1336 /* ElementView.swift */; };
+		292E5DF9209FAEBF00561451 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2995A028209A8810005D1336 /* Style.swift */; };
+		292E5DFA209FAEBF00561451 /* TurtleRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2995A02C209ACAE0005D1336 /* TurtleRenderer.swift */; };
+		292E5DFB209FAEBF00561451 /* Turtle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2995A026209A87F6005D1336 /* Turtle.swift */; };
+		292E5DFC209FAECB00561451 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298BC325209BD82D009D2990 /* UIView+Extensions.swift */; };
 		2995A00320997702005D1336 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2995A00220997702005D1336 /* AppDelegate.swift */; };
-		2995A025209977FA005D1336 /* TurtleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2995A024209977FA005D1336 /* TurtleView.swift */; };
-		2995A027209A87F6005D1336 /* Turtle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2995A026209A87F6005D1336 /* Turtle.swift */; };
-		2995A029209A8810005D1336 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2995A028209A8810005D1336 /* Style.swift */; };
-		2995A02B209A8837005D1336 /* ElementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2995A02A209A8837005D1336 /* ElementView.swift */; };
-		2995A02D209ACAE0005D1336 /* TurtleRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2995A02C209ACAE0005D1336 /* TurtleRenderer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,6 +106,12 @@
 		292E5DA3209FA04B00561451 /* TurtleKit */ = {
 			isa = PBXGroup;
 			children = (
+				298BC325209BD82D009D2990 /* UIView+Extensions.swift */,
+				2995A02C209ACAE0005D1336 /* TurtleRenderer.swift */,
+				2995A026209A87F6005D1336 /* Turtle.swift */,
+				2995A028209A8810005D1336 /* Style.swift */,
+				2995A024209977FA005D1336 /* TurtleView.swift */,
+				2995A02A209A8837005D1336 /* ElementView.swift */,
 				292E5DC0209FA1C800561451 /* TurtleFoo.swift */,
 				292E5DA4209FA04B00561451 /* TurtleKit.h */,
 				292E5DA5209FA04B00561451 /* Info.plist */,
@@ -135,24 +141,10 @@
 		2995A00120997702005D1336 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
-				2995A02C209ACAE0005D1336 /* TurtleRenderer.swift */,
-				2995A026209A87F6005D1336 /* Turtle.swift */,
-				2995A028209A8810005D1336 /* Style.swift */,
-				2995A024209977FA005D1336 /* TurtleView.swift */,
-				2995A02A209A8837005D1336 /* ElementView.swift */,
-				2995A022209977E8005D1336 /* host */,
-				298BC325209BD82D009D2990 /* UIView+Extensions.swift */,
-			);
-			path = Demo;
-			sourceTree = "<group>";
-		};
-		2995A022209977E8005D1336 /* host */ = {
-			isa = PBXGroup;
-			children = (
 				2995A00220997702005D1336 /* AppDelegate.swift */,
 				2995A00E20997704005D1336 /* Info.plist */,
 			);
-			path = host;
+			path = Demo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -296,7 +288,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				292E5DFC209FAECB00561451 /* UIView+Extensions.swift in Sources */,
+				292E5DF7209FAEBF00561451 /* TurtleView.swift in Sources */,
+				292E5DFA209FAEBF00561451 /* TurtleRenderer.swift in Sources */,
+				292E5DF8209FAEBF00561451 /* ElementView.swift in Sources */,
 				292E5DC2209FA1E500561451 /* TurtleFoo.swift in Sources */,
+				292E5DF9209FAEBF00561451 /* Style.swift in Sources */,
+				292E5DFB209FAEBF00561451 /* Turtle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,13 +309,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				298BC326209BD82D009D2990 /* UIView+Extensions.swift in Sources */,
-				2995A02D209ACAE0005D1336 /* TurtleRenderer.swift in Sources */,
-				2995A02B209A8837005D1336 /* ElementView.swift in Sources */,
-				2995A025209977FA005D1336 /* TurtleView.swift in Sources */,
-				2995A027209A87F6005D1336 /* Turtle.swift in Sources */,
 				2995A00320997702005D1336 /* AppDelegate.swift in Sources */,
-				2995A029209A8810005D1336 /* Style.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

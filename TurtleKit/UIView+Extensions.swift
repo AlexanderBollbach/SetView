@@ -8,8 +8,8 @@
 
 import UIKit
 
-extension UIView {
-    func pinTo(superView: UIView, insetBy insets: CGFloat) {
+public extension UIView {
+    public func pinTo(superView: UIView, insetBy insets: CGFloat) {
         
         superView.addSubview(self)
         

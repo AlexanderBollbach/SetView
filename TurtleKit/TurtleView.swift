@@ -1,6 +1,6 @@
 import UIKit
 
-class TurtleView: UIView {
+public class TurtleView: UIView {
   
     lazy var stackView: UIStackView = {
         let sv = UIStackView()
@@ -10,7 +10,7 @@ class TurtleView: UIView {
         return sv
     }()
     
-    init() {
+    public init() {
         super.init(frame: .zero)
         stackView.pinTo(superView: self, insetBy: 0)
     }
@@ -30,7 +30,7 @@ class TurtleView: UIView {
         }
     }
     
-    required init?(coder aDecoder: NSCoder) { fatalError() }
+    public required init?(coder aDecoder: NSCoder) { fatalError() }
 
     
     func insert(_ view: TurtleView) {

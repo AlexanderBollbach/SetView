@@ -1,12 +1,14 @@
 import UIKit
 
-protocol TurtleRenderer {
+public protocol TurtleRenderer {
     func render(turtles: [Turtle], in turtleView: TurtleView)
 }
 
-class BruteForceRenderer: TurtleRenderer {
+public class BruteForceRenderer: TurtleRenderer {
     
-    func render(turtles: [Turtle], in turtleView: TurtleView) {
+    public init() { }
+    
+    public func render(turtles: [Turtle], in turtleView: TurtleView) {
         
         for turtle in turtles {
             

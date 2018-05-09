@@ -1,8 +1,8 @@
 import Foundation
 
-struct Turtle: Equatable {
+public struct Turtle: Equatable {
     
-    enum TurtleType {
+    public enum TurtleType {
         case button
         case label(String)
         case list
@@ -15,7 +15,7 @@ struct Turtle: Equatable {
     let action: () -> Void
     let children: [Turtle]
     
-    init(
+    public init(
         key: Int,
         title: String,
         isActive: Bool = false,
@@ -32,13 +32,13 @@ struct Turtle: Equatable {
         self.children = children
     }
     
-    static func ==(lhs: Turtle, rhs: Turtle) -> Bool {
+    public static func ==(lhs: Turtle, rhs: Turtle) -> Bool {
         return lhs.key == rhs.key && lhs.isActive == rhs.isActive
     }
 }
 
 extension Turtle: Hashable {
-    var hashValue: Int {
+    public var hashValue: Int {
         return key
     }
 }

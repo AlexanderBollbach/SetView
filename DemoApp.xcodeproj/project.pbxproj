@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		292E5DAB209FA04C00561451 /* TurtleKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 292E5DA2209FA04B00561451 /* TurtleKit.framework */; };
+		292415B020A2A02F003E87C7 /* TurtleKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292415AF20A2A02F003E87C7 /* TurtleKitTests.swift */; };
+		292415B220A2A02F003E87C7 /* TurtleKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 292E5DA2209FA04B00561451 /* TurtleKit.framework */; };
 		292E5DB4209FA04C00561451 /* TurtleKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 292E5DA4209FA04B00561451 /* TurtleKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		292E5DB7209FA04C00561451 /* TurtleKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 292E5DA2209FA04B00561451 /* TurtleKit.framework */; };
 		292E5DB8209FA04C00561451 /* TurtleKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 292E5DA2209FA04B00561451 /* TurtleKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		292E5DC2209FA1E500561451 /* TurtleFoo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292E5DC0209FA1C800561451 /* TurtleFoo.swift */; };
 		292E5DF7209FAEBF00561451 /* TurtleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2995A024209977FA005D1336 /* TurtleView.swift */; };
 		292E5DF8209FAEBF00561451 /* ElementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2995A02A209A8837005D1336 /* ElementView.swift */; };
 		292E5DF9209FAEBF00561451 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2995A028209A8810005D1336 /* Style.swift */; };
@@ -22,19 +22,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		292E5DAC209FA04C00561451 /* PBXContainerItemProxy */ = {
+		292415B320A2A02F003E87C7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 29959FF720997702005D1336 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 292E5DA1209FA04B00561451;
 			remoteInfo = TurtleKit;
-		};
-		292E5DAE209FA04C00561451 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 29959FF720997702005D1336 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 29959FFE20997702005D1336;
-			remoteInfo = TurtleView;
 		};
 		292E5DB5209FA04C00561451 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -60,13 +53,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		292415AD20A2A02F003E87C7 /* TurtleKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TurtleKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		292415AF20A2A02F003E87C7 /* TurtleKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurtleKitTests.swift; sourceTree = "<group>"; };
+		292415B120A2A02F003E87C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		292415B820A2A093003E87C7 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		292E5DA2209FA04B00561451 /* TurtleKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TurtleKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		292E5DA4209FA04B00561451 /* TurtleKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TurtleKit.h; sourceTree = "<group>"; };
 		292E5DA5209FA04B00561451 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		292E5DAA209FA04C00561451 /* TurtleKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TurtleKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		292E5DC0209FA1C800561451 /* TurtleFoo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurtleFoo.swift; sourceTree = "<group>"; };
 		298BC325209BD82D009D2990 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
-		29959FFF20997702005D1336 /* TurtleKitProj.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TurtleKitProj.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		29959FFF20997702005D1336 /* DemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2995A00220997702005D1336 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2995A00E20997704005D1336 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2995A024209977FA005D1336 /* TurtleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurtleView.swift; sourceTree = "<group>"; };
@@ -77,18 +72,18 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		292415AA20A2A02F003E87C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				292415B220A2A02F003E87C7 /* TurtleKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		292E5D9E209FA04B00561451 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		292E5DA7209FA04C00561451 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				292E5DAB209FA04C00561451 /* TurtleKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,6 +98,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		292415AE20A2A02F003E87C7 /* TurtleKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				292415AF20A2A02F003E87C7 /* TurtleKitTests.swift */,
+				292415B120A2A02F003E87C7 /* Info.plist */,
+			);
+			path = TurtleKitTests;
+			sourceTree = "<group>";
+		};
 		292E5DA3209FA04B00561451 /* TurtleKit */ = {
 			isa = PBXGroup;
 			children = (
@@ -112,7 +116,6 @@
 				2995A028209A8810005D1336 /* Style.swift */,
 				2995A024209977FA005D1336 /* TurtleView.swift */,
 				2995A02A209A8837005D1336 /* ElementView.swift */,
-				292E5DC0209FA1C800561451 /* TurtleFoo.swift */,
 				292E5DA4209FA04B00561451 /* TurtleKit.h */,
 				292E5DA5209FA04B00561451 /* Info.plist */,
 			);
@@ -122,8 +125,10 @@
 		29959FF620997702005D1336 = {
 			isa = PBXGroup;
 			children = (
+				292415B820A2A093003E87C7 /* MyPlayground.playground */,
 				2995A00120997702005D1336 /* Demo */,
 				292E5DA3209FA04B00561451 /* TurtleKit */,
+				292415AE20A2A02F003E87C7 /* TurtleKitTests */,
 				2995A00020997702005D1336 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -131,9 +136,9 @@
 		2995A00020997702005D1336 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				29959FFF20997702005D1336 /* TurtleKitProj.app */,
+				29959FFF20997702005D1336 /* DemoApp.app */,
 				292E5DA2209FA04B00561451 /* TurtleKit.framework */,
-				292E5DAA209FA04C00561451 /* TurtleKitTests.xctest */,
+				292415AD20A2A02F003E87C7 /* TurtleKitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -161,6 +166,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		292415AC20A2A02F003E87C7 /* TurtleKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 292415B520A2A02F003E87C7 /* Build configuration list for PBXNativeTarget "TurtleKitTests" */;
+			buildPhases = (
+				292415A920A2A02F003E87C7 /* Sources */,
+				292415AA20A2A02F003E87C7 /* Frameworks */,
+				292415AB20A2A02F003E87C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				292415B420A2A02F003E87C7 /* PBXTargetDependency */,
+			);
+			name = TurtleKitTests;
+			productName = TurtleKitTests;
+			productReference = 292415AD20A2A02F003E87C7 /* TurtleKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		292E5DA1209FA04B00561451 /* TurtleKit */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 292E5DBD209FA04C00561451 /* Build configuration list for PBXNativeTarget "TurtleKit" */;
@@ -179,28 +202,9 @@
 			productReference = 292E5DA2209FA04B00561451 /* TurtleKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		292E5DA9209FA04C00561451 /* TurtleKitTests */ = {
+		29959FFE20997702005D1336 /* DemoApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 292E5DBF209FA04C00561451 /* Build configuration list for PBXNativeTarget "TurtleKitTests" */;
-			buildPhases = (
-				292E5DA6209FA04C00561451 /* Sources */,
-				292E5DA7209FA04C00561451 /* Frameworks */,
-				292E5DA8209FA04C00561451 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				292E5DAD209FA04C00561451 /* PBXTargetDependency */,
-				292E5DAF209FA04C00561451 /* PBXTargetDependency */,
-			);
-			name = TurtleKitTests;
-			productName = TurtleKitTests;
-			productReference = 292E5DAA209FA04C00561451 /* TurtleKitTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		29959FFE20997702005D1336 /* TurtleKitProj */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 2995A01C20997705005D1336 /* Build configuration list for PBXNativeTarget "TurtleKitProj" */;
+			buildConfigurationList = 2995A01C20997705005D1336 /* Build configuration list for PBXNativeTarget "DemoApp" */;
 			buildPhases = (
 				29959FFB20997702005D1336 /* Sources */,
 				29959FFC20997702005D1336 /* Frameworks */,
@@ -212,9 +216,9 @@
 			dependencies = (
 				292E5DB6209FA04C00561451 /* PBXTargetDependency */,
 			);
-			name = TurtleKitProj;
+			name = DemoApp;
 			productName = OptionsView;
-			productReference = 29959FFF20997702005D1336 /* TurtleKitProj.app */;
+			productReference = 29959FFF20997702005D1336 /* DemoApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -227,19 +231,18 @@
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Alexander Bollbach";
 				TargetAttributes = {
-					292E5DA1209FA04B00561451 = {
+					292415AC20A2A02F003E87C7 = {
 						CreatedOnToolsVersion = 9.3;
 					};
-					292E5DA9209FA04C00561451 = {
+					292E5DA1209FA04B00561451 = {
 						CreatedOnToolsVersion = 9.3;
-						TestTargetID = 29959FFE20997702005D1336;
 					};
 					29959FFE20997702005D1336 = {
 						CreatedOnToolsVersion = 9.3;
 					};
 				};
 			};
-			buildConfigurationList = 29959FFA20997702005D1336 /* Build configuration list for PBXProject "TurtleKitProj" */;
+			buildConfigurationList = 29959FFA20997702005D1336 /* Build configuration list for PBXProject "DemoApp" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -252,22 +255,22 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				29959FFE20997702005D1336 /* TurtleKitProj */,
+				29959FFE20997702005D1336 /* DemoApp */,
 				292E5DA1209FA04B00561451 /* TurtleKit */,
-				292E5DA9209FA04C00561451 /* TurtleKitTests */,
+				292415AC20A2A02F003E87C7 /* TurtleKitTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		292E5DA0209FA04B00561451 /* Resources */ = {
+		292415AB20A2A02F003E87C7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		292E5DA8209FA04C00561451 /* Resources */ = {
+		292E5DA0209FA04B00561451 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -284,6 +287,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		292415A920A2A02F003E87C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				292415B020A2A02F003E87C7 /* TurtleKitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		292E5D9D209FA04B00561451 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -292,16 +303,8 @@
 				292E5DF7209FAEBF00561451 /* TurtleView.swift in Sources */,
 				292E5DFA209FAEBF00561451 /* TurtleRenderer.swift in Sources */,
 				292E5DF8209FAEBF00561451 /* ElementView.swift in Sources */,
-				292E5DC2209FA1E500561451 /* TurtleFoo.swift in Sources */,
 				292E5DF9209FAEBF00561451 /* Style.swift in Sources */,
 				292E5DFB209FAEBF00561451 /* Turtle.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		292E5DA6209FA04C00561451 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,15 +319,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		292E5DAD209FA04C00561451 /* PBXTargetDependency */ = {
+		292415B420A2A02F003E87C7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 292E5DA1209FA04B00561451 /* TurtleKit */;
-			targetProxy = 292E5DAC209FA04C00561451 /* PBXContainerItemProxy */;
-		};
-		292E5DAF209FA04C00561451 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 29959FFE20997702005D1336 /* TurtleKitProj */;
-			targetProxy = 292E5DAE209FA04C00561451 /* PBXContainerItemProxy */;
+			targetProxy = 292415B320A2A02F003E87C7 /* PBXContainerItemProxy */;
 		};
 		292E5DB6209FA04C00561451 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -334,6 +332,42 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		292415B620A2A02F003E87C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6UUR9483U2;
+				INFOPLIST_FILE = TurtleKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.alex.TurtleKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		292415B720A2A02F003E87C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6UUR9483U2;
+				INFOPLIST_FILE = TurtleKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.alex.TurtleKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		292E5DB9209FA04C00561451 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -387,44 +421,6 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		292E5DBB209FA04C00561451 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = TurtleKitTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.alex.TurtleKitTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TurtleKitProj.app/TurtleKitProj";
-			};
-			name = Debug;
-		};
-		292E5DBC209FA04C00561451 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = TurtleKitTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.alex.TurtleKitTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TurtleKitProj.app/TurtleKitProj";
 			};
 			name = Release;
 		};
@@ -549,12 +545,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6UUR9483U2;
-				INFOPLIST_FILE = "$(SRCROOT)/Demo/host/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.alex.OptionsView;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alex.TurtleKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -568,12 +564,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6UUR9483U2;
-				INFOPLIST_FILE = "$(SRCROOT)/Demo/host/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.alex.OptionsView;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alex.TurtleKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -583,6 +579,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		292415B520A2A02F003E87C7 /* Build configuration list for PBXNativeTarget "TurtleKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				292415B620A2A02F003E87C7 /* Debug */,
+				292415B720A2A02F003E87C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		292E5DBD209FA04C00561451 /* Build configuration list for PBXNativeTarget "TurtleKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -592,16 +597,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		292E5DBF209FA04C00561451 /* Build configuration list for PBXNativeTarget "TurtleKitTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				292E5DBB209FA04C00561451 /* Debug */,
-				292E5DBC209FA04C00561451 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		29959FFA20997702005D1336 /* Build configuration list for PBXProject "TurtleKitProj" */ = {
+		29959FFA20997702005D1336 /* Build configuration list for PBXProject "DemoApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2995A01A20997705005D1336 /* Debug */,
@@ -610,7 +606,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2995A01C20997705005D1336 /* Build configuration list for PBXNativeTarget "TurtleKitProj" */ = {
+		2995A01C20997705005D1336 /* Build configuration list for PBXNativeTarget "DemoApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2995A01D20997705005D1336 /* Debug */,

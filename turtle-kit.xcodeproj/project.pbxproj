@@ -61,7 +61,7 @@
 		292E5DA4209FA04B00561451 /* TurtleKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TurtleKit.h; sourceTree = "<group>"; };
 		292E5DA5209FA04B00561451 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		298BC325209BD82D009D2990 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
-		29959FFF20997702005D1336 /* DemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		29959FFF20997702005D1336 /* turtle-kit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "turtle-kit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2995A00220997702005D1336 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2995A00E20997704005D1336 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2995A024209977FA005D1336 /* TurtleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurtleView.swift; sourceTree = "<group>"; };
@@ -136,7 +136,7 @@
 		2995A00020997702005D1336 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				29959FFF20997702005D1336 /* DemoApp.app */,
+				29959FFF20997702005D1336 /* turtle-kit.app */,
 				292E5DA2209FA04B00561451 /* TurtleKit.framework */,
 				292415AD20A2A02F003E87C7 /* TurtleKitTests.xctest */,
 			);
@@ -202,9 +202,9 @@
 			productReference = 292E5DA2209FA04B00561451 /* TurtleKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		29959FFE20997702005D1336 /* DemoApp */ = {
+		29959FFE20997702005D1336 /* turtle-kit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2995A01C20997705005D1336 /* Build configuration list for PBXNativeTarget "DemoApp" */;
+			buildConfigurationList = 2995A01C20997705005D1336 /* Build configuration list for PBXNativeTarget "turtle-kit" */;
 			buildPhases = (
 				29959FFB20997702005D1336 /* Sources */,
 				29959FFC20997702005D1336 /* Frameworks */,
@@ -216,9 +216,9 @@
 			dependencies = (
 				292E5DB6209FA04C00561451 /* PBXTargetDependency */,
 			);
-			name = DemoApp;
+			name = "turtle-kit";
 			productName = OptionsView;
-			productReference = 29959FFF20997702005D1336 /* DemoApp.app */;
+			productReference = 29959FFF20997702005D1336 /* turtle-kit.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -242,7 +242,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 29959FFA20997702005D1336 /* Build configuration list for PBXProject "DemoApp" */;
+			buildConfigurationList = 29959FFA20997702005D1336 /* Build configuration list for PBXProject "turtle-kit" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -255,7 +255,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				29959FFE20997702005D1336 /* DemoApp */,
+				29959FFE20997702005D1336 /* turtle-kit */,
 				292E5DA1209FA04B00561451 /* TurtleKit */,
 				292415AC20A2A02F003E87C7 /* TurtleKitTests */,
 			);
@@ -597,7 +597,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		29959FFA20997702005D1336 /* Build configuration list for PBXProject "DemoApp" */ = {
+		29959FFA20997702005D1336 /* Build configuration list for PBXProject "turtle-kit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2995A01A20997705005D1336 /* Debug */,
@@ -606,7 +606,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2995A01C20997705005D1336 /* Build configuration list for PBXNativeTarget "DemoApp" */ = {
+		2995A01C20997705005D1336 /* Build configuration list for PBXNativeTarget "turtle-kit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2995A01D20997705005D1336 /* Debug */,

@@ -17,7 +17,7 @@
                BlueprintIdentifier = "292E5DA1209FA04B00561451"
                BuildableName = "TurtleKit.framework"
                BlueprintName = "TurtleKit"
-               ReferencedContainer = "container:DemoApp.xcodeproj">
+               ReferencedContainer = "container:turtle-kit.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -35,7 +35,7 @@
                BlueprintIdentifier = "292415AC20A2A02F003E87C7"
                BuildableName = "TurtleKitTests.xctest"
                BlueprintName = "TurtleKitTests"
-               ReferencedContainer = "container:DemoApp.xcodeproj">
+               ReferencedContainer = "container:turtle-kit.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -45,7 +45,7 @@
             BlueprintIdentifier = "292E5DA1209FA04B00561451"
             BuildableName = "TurtleKit.framework"
             BlueprintName = "TurtleKit"
-            ReferencedContainer = "container:DemoApp.xcodeproj">
+            ReferencedContainer = "container:turtle-kit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -67,7 +67,7 @@
             BlueprintIdentifier = "292E5DA1209FA04B00561451"
             BuildableName = "TurtleKit.framework"
             BlueprintName = "TurtleKit"
-            ReferencedContainer = "container:DemoApp.xcodeproj">
+            ReferencedContainer = "container:turtle-kit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -85,7 +85,7 @@
             BlueprintIdentifier = "292E5DA1209FA04B00561451"
             BuildableName = "TurtleKit.framework"
             BlueprintName = "TurtleKit"
-            ReferencedContainer = "container:DemoApp.xcodeproj">
+            ReferencedContainer = "container:turtle-kit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

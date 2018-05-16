@@ -1,56 +1,22 @@
 import UIKit
 
-public protocol TurtleRenderer {
-    func render(turtles: [Turtle], in turtleView: TurtleView)
+public enum Turtle {
+    case button(title: String, action: () -> Void)
+    indirect case combined(axis: TurtleViewAxis, turtles: [Turtle])
+    
 }
 
-public class BruteForceRenderer: TurtleRenderer {
-    
-    public init() { }
-    
-    public func render(turtles: [Turtle], in turtleView: TurtleView) {
+extension Turtle {
+
+    public func render() -> TurtleView {
         
-        for turtle in turtles {
-            
-            let v = TurtleView(element: turtle)
-            let r = Double(arc4random() / UInt32.max)
-            v.backgroundColor = UIColor(red: CGFloat(r), green: 1, blue: 1, alpha: 1)
-            turtleView.insert(v)
-            render(turtles: turtle.children, in: v)
+        switch self {
+        case .button(let title, let action):
+            return TurtleButton.init(title: title, action: action)
+        case .combined(let axis, let turtles):
+            let tviews = turtles.map { $0.render() }
+            return TurtleSetView.init(views: tviews, axis: axis)
         }
     }
+    
 }
-//
-//class FastTurtleRenderer: TurtleRenderer {
-//
-//    let turtleView: TurtleView
-//
-//    var currentTurtles = [Turtle]()
-//
-//    init(tutleView: TurtleView) {
-//        self.turtleView = tutleView
-//    }
-//
-//    private struct ViewUpdate {
-//        let add: [Turtle]
-//        let remove: [Turtle]
-//    }
-//
-//    func render(turtles: [Turtle], in turtleView: TurtleView) {
-//
-//        let update = diff(old: currentTurtles, new: turtles)
-//
-//        self.currentTurtles = turtles
-//
-////        for turtle in update.remove {
-////        }
-//    }
-//
-//    private func diff(old: [Turtle], new: [Turtle]) -> ViewUpdate {
-//
-//        let elementsToAdd = Set(new).subtracting(Set(old))
-//        let oldElementsToDelete = Set(old).subtracting(Set(new))
-//
-//        return ViewUpdate(add: Array(elementsToAdd), remove: Array(oldElementsToDelete))
-//    }
-//}

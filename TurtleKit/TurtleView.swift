@@ -1,46 +1,63 @@
 import UIKit
 
+public enum TurtleViewAxis {
+    case horizontal
+    case vertical
+}
+
 public class TurtleView: UIView {
-  
-    lazy var stackView: UIStackView = {
-        let sv = UIStackView()
-        sv.axis = .horizontal
-        sv.distribution = .fillEqually
-//        sv.alignment = .center
-        return sv
-    }()
     
-    public init() {
-        super.init(frame: .zero)
-        stackView.pinTo(superView: self, insetBy: 0)
-    }
-    
-    init(element: Turtle) {
+    init() {
         super.init(frame: .zero)
         
-        switch element.elementType {
         
-        case .label(let text):
-            let label = UILabel()
-            label.pinTo(superView: self, insetBy: 0)
-            label.text = text
-            
-        default:
-            fatalError()
-        }
+        backgroundColor = .green
     }
     
     public required init?(coder aDecoder: NSCoder) { fatalError() }
+}
 
+class TurtleButton: TurtleView {
     
-    func insert(_ view: TurtleView) {
-    
-        stackView.addArrangedSubview(view)
-    }
-    
-    func remove(_ view: TurtleView) {
+    private let action: () -> Void
+   
+    init(title: String, action: @escaping () -> Void) {
         
-        stackView.removeArrangedSubview(view)
-        view.removeFromSuperview()
+        self.action = action
+        
+        super.init()
+        
+        let label = UILabel.init()
+        label.textAlignment = .center
+        label.textColor = .white
+        label.text = title
+        label.pinTo(superView: self, insetBy: 0)
     }
+   
+    required init?(coder aDecoder: NSCoder) { fatalError() }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.action()
+    }
+}
+
+class TurtleSetView: TurtleView {
+    
+    init(views: [TurtleView], axis: TurtleViewAxis) {
+        super.init()
+        
+        let sv = UIStackView.init(arrangedSubviews: views)
+        sv.distribution = .fillEqually
+        
+        switch axis {
+        case .horizontal:
+            sv.axis = .horizontal
+        case .vertical:
+            sv.axis = .vertical
+        }
+        
+        sv.pinTo(superView: self, insetBy: 0)
+    }
+    
+    required init?(coder aDecoder: NSCoder) { fatalError() }
 }

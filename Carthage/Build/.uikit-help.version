@@ -1,0 +1,18 @@
+{
+  "Mac" : [
+
+  ],
+  "watchOS" : [
+
+  ],
+  "tvOS" : [
+
+  ],
+  "commitish" : "9172fe73b08b861659ff4a97e690effb83068487",
+  "iOS" : [
+    {
+      "name" : "UIKitHelp",
+      "hash" : "46430447e71ea90724aed6b63a874b1dddce54f28e28612aff1206aa9fb18bc5"
+    }
+  ]
+}

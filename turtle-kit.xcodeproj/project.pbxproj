@@ -9,14 +9,14 @@
 /* Begin PBXBuildFile section */
 		292415B020A2A02F003E87C7 /* TurtleKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292415AF20A2A02F003E87C7 /* TurtleKitTests.swift */; };
 		292415B220A2A02F003E87C7 /* TurtleKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 292E5DA2209FA04B00561451 /* TurtleKit.framework */; };
+		292C414D20AD176800FA1006 /* TurtleKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 292E5DA2209FA04B00561451 /* TurtleKit.framework */; };
+		292C414F20AD18FE00FA1006 /* UIKitHelp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2940B8A920AD0C960020B858 /* UIKitHelp.framework */; };
+		292C415020AD192B00FA1006 /* UIKitHelp.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2940B8A920AD0C960020B858 /* UIKitHelp.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		292E5DB4209FA04C00561451 /* TurtleKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 292E5DA4209FA04B00561451 /* TurtleKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		292E5DF7209FAEBF00561451 /* TurtleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2995A024209977FA005D1336 /* TurtleView.swift */; };
 		292E5DF8209FAEBF00561451 /* ElementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2995A02A209A8837005D1336 /* ElementView.swift */; };
 		292E5DF9209FAEBF00561451 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2995A028209A8810005D1336 /* Style.swift */; };
-		292E5DFA209FAEBF00561451 /* TurtleRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2995A02C209ACAE0005D1336 /* TurtleRenderer.swift */; };
-		292E5DFB209FAEBF00561451 /* Turtle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2995A026209A87F6005D1336 /* Turtle.swift */; };
-		292E5DFC209FAECB00561451 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298BC325209BD82D009D2990 /* UIView+Extensions.swift */; };
-		2940B87320ABDE2A0020B858 /* TurtleKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 292E5DA2209FA04B00561451 /* TurtleKit.framework */; };
+		292E5DFA209FAEBF00561451 /* Turtle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2995A02C209ACAE0005D1336 /* Turtle.swift */; };
 		2995A00320997702005D1336 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2995A00220997702005D1336 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +30,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		2940B8B320AD0E430020B858 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				292C415020AD192B00FA1006 /* UIKitHelp.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		292415AD20A2A02F003E87C7 /* TurtleKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TurtleKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		292415AF20A2A02F003E87C7 /* TurtleKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurtleKitTests.swift; sourceTree = "<group>"; };
@@ -38,15 +52,15 @@
 		292E5DA2209FA04B00561451 /* TurtleKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TurtleKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		292E5DA4209FA04B00561451 /* TurtleKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TurtleKit.h; sourceTree = "<group>"; };
 		292E5DA5209FA04B00561451 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		298BC325209BD82D009D2990 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		2940B8A720AD0AF60020B858 /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
+		2940B8A920AD0C960020B858 /* UIKitHelp.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKitHelp.framework; path = Carthage/Build/iOS/UIKitHelp.framework; sourceTree = "<group>"; };
 		29959FFF20997702005D1336 /* turtle-kit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "turtle-kit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2995A00220997702005D1336 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2995A00E20997704005D1336 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2995A024209977FA005D1336 /* TurtleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurtleView.swift; sourceTree = "<group>"; };
-		2995A026209A87F6005D1336 /* Turtle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Turtle.swift; sourceTree = "<group>"; };
 		2995A028209A8810005D1336 /* Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
 		2995A02A209A8837005D1336 /* ElementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementView.swift; sourceTree = "<group>"; };
-		2995A02C209ACAE0005D1336 /* TurtleRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurtleRenderer.swift; sourceTree = "<group>"; };
+		2995A02C209ACAE0005D1336 /* Turtle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Turtle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				292C414F20AD18FE00FA1006 /* UIKitHelp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,7 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2940B87320ABDE2A0020B858 /* TurtleKit.framework in Frameworks */,
+				292C414D20AD176800FA1006 /* TurtleKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,11 +103,9 @@
 		292E5DA3209FA04B00561451 /* TurtleKit */ = {
 			isa = PBXGroup;
 			children = (
-				298BC325209BD82D009D2990 /* UIView+Extensions.swift */,
-				2995A02C209ACAE0005D1336 /* TurtleRenderer.swift */,
-				2995A026209A87F6005D1336 /* Turtle.swift */,
+				2940B87420AD088F0020B858 /* Views */,
+				2995A02C209ACAE0005D1336 /* Turtle.swift */,
 				2995A028209A8810005D1336 /* Style.swift */,
-				2995A024209977FA005D1336 /* TurtleView.swift */,
 				2995A02A209A8837005D1336 /* ElementView.swift */,
 				292E5DA4209FA04B00561451 /* TurtleKit.h */,
 				292E5DA5209FA04B00561451 /* Info.plist */,
@@ -103,13 +116,23 @@
 		2940B87220ABDE2A0020B858 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2940B8A920AD0C960020B858 /* UIKitHelp.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2940B87420AD088F0020B858 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2995A024209977FA005D1336 /* TurtleView.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 		29959FF620997702005D1336 = {
 			isa = PBXGroup;
 			children = (
+				2940B8A720AD0AF60020B858 /* Cartfile */,
 				292415B820A2A093003E87C7 /* MyPlayground.playground */,
 				2995A00120997702005D1336 /* Demo */,
 				292E5DA3209FA04B00561451 /* TurtleKit */,
@@ -178,6 +201,7 @@
 				292E5D9E209FA04B00561451 /* Frameworks */,
 				292E5D9F209FA04B00561451 /* Headers */,
 				292E5DA0209FA04B00561451 /* Resources */,
+				292C414E20AD18D700FA1006 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -192,9 +216,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2995A01C20997705005D1336 /* Build configuration list for PBXNativeTarget "turtle-kit" */;
 			buildPhases = (
+				2940B8B420AD0FF40020B858 /* Run Script */,
 				29959FFB20997702005D1336 /* Sources */,
 				29959FFC20997702005D1336 /* Frameworks */,
 				29959FFD20997702005D1336 /* Resources */,
+				2940B8B320AD0E430020B858 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -270,6 +296,36 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		292C414E20AD18D700FA1006 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+		2940B8B420AD0FF40020B858 /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		292415A920A2A02F003E87C7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -283,12 +339,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				292E5DFC209FAECB00561451 /* UIView+Extensions.swift in Sources */,
 				292E5DF7209FAEBF00561451 /* TurtleView.swift in Sources */,
-				292E5DFA209FAEBF00561451 /* TurtleRenderer.swift in Sources */,
+				292E5DFA209FAEBF00561451 /* Turtle.swift in Sources */,
 				292E5DF8209FAEBF00561451 /* ElementView.swift in Sources */,
 				292E5DF9209FAEBF00561451 /* Style.swift in Sources */,
-				292E5DFB209FAEBF00561451 /* Turtle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +412,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = TurtleKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -386,6 +444,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = TurtleKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -523,6 +585,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6UUR9483U2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/Demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -541,6 +607,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6UUR9483U2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/Demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

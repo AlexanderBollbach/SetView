@@ -1,4 +1,5 @@
 import UIKit
+import UIKitHelp
 
 public enum TurtleViewAxis {
     case horizontal
@@ -7,10 +8,11 @@ public enum TurtleViewAxis {
 
 public class TurtleView: UIView {
     
+  
+    
     init() {
         super.init(frame: .zero)
-        
-        
+
         backgroundColor = .green
     }
     
@@ -31,7 +33,7 @@ class TurtleButton: TurtleView {
         label.textAlignment = .center
         label.textColor = .white
         label.text = title
-        label.pinTo(superView: self, insetBy: 0)
+        label.pinTo(superView: self)
     }
    
     required init?(coder aDecoder: NSCoder) { fatalError() }

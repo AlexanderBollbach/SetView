@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "29959FFE20997702005D1336"
-               BuildableName = "turtle-kit.app"
-               BlueprintName = "turtle-kit"
-               ReferencedContainer = "container:turtle-kit.xcodeproj">
+               BlueprintIdentifier = "2940B87D20AD09660020B858"
+               BuildableName = "uikit-help.app"
+               BlueprintName = "uikit-help"
+               ReferencedContainer = "container:uikit-help.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -28,24 +28,14 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "292415AC20A2A02F003E87C7"
-               BuildableName = "TurtleKitTests.xctest"
-               BlueprintName = "TurtleKitTests"
-               ReferencedContainer = "container:turtle-kit.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "29959FFE20997702005D1336"
-            BuildableName = "turtle-kit.app"
-            BlueprintName = "turtle-kit"
-            ReferencedContainer = "container:turtle-kit.xcodeproj">
+            BlueprintIdentifier = "2940B87D20AD09660020B858"
+            BuildableName = "uikit-help.app"
+            BlueprintName = "uikit-help"
+            ReferencedContainer = "container:uikit-help.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -65,10 +55,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "29959FFE20997702005D1336"
-            BuildableName = "turtle-kit.app"
-            BlueprintName = "turtle-kit"
-            ReferencedContainer = "container:turtle-kit.xcodeproj">
+            BlueprintIdentifier = "2940B87D20AD09660020B858"
+            BuildableName = "uikit-help.app"
+            BlueprintName = "uikit-help"
+            ReferencedContainer = "container:uikit-help.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -84,10 +74,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "29959FFE20997702005D1336"
-            BuildableName = "turtle-kit.app"
-            BlueprintName = "turtle-kit"
-            ReferencedContainer = "container:turtle-kit.xcodeproj">
+            BlueprintIdentifier = "2940B87D20AD09660020B858"
+            BuildableName = "uikit-help.app"
+            BlueprintName = "uikit-help"
+            ReferencedContainer = "container:uikit-help.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

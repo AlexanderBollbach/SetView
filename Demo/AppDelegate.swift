@@ -15,6 +15,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 class DemoViewController: UIViewController {
     
+    var demoView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -30,12 +32,22 @@ class DemoViewController: UIViewController {
                 ]
         )
         
-        let v = t.render()
-        v.pinTo(superView: view, insetBy: 0)
+        print(t)
+
+        demoView = t.render()
+        
+        view.addSubview(demoView)
         
     }
     
     override func viewDidAppear(_ animated: Bool) {
         
+        
+        
+    }
+    
+    override func viewDidLayoutSubviews() {
+        
+        demoView.frame = view.bounds
     }
 }

@@ -11,13 +11,14 @@
 		292415B220A2A02F003E87C7 /* TurtleKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 292E5DA2209FA04B00561451 /* TurtleKit.framework */; };
 		292C414D20AD176800FA1006 /* TurtleKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 292E5DA2209FA04B00561451 /* TurtleKit.framework */; };
 		292C414F20AD18FE00FA1006 /* UIKitHelp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2940B8A920AD0C960020B858 /* UIKitHelp.framework */; };
-		292C415020AD192B00FA1006 /* UIKitHelp.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2940B8A920AD0C960020B858 /* UIKitHelp.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		292E5DB4209FA04C00561451 /* TurtleKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 292E5DA4209FA04B00561451 /* TurtleKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		292E5DF7209FAEBF00561451 /* TurtleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2995A024209977FA005D1336 /* TurtleView.swift */; };
 		292E5DF8209FAEBF00561451 /* ElementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2995A02A209A8837005D1336 /* ElementView.swift */; };
 		292E5DF9209FAEBF00561451 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2995A028209A8810005D1336 /* Style.swift */; };
 		292E5DFA209FAEBF00561451 /* Turtle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2995A02C209ACAE0005D1336 /* Turtle.swift */; };
 		2995A00320997702005D1336 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2995A00220997702005D1336 /* AppDelegate.swift */; };
+		299E929B20B652F60047E5C7 /* UIKitHelp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2940B8A920AD0C960020B858 /* UIKitHelp.framework */; };
+		299E929C20B652F60047E5C7 /* UIKitHelp.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2940B8A920AD0C960020B858 /* UIKitHelp.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +38,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				292C415020AD192B00FA1006 /* UIKitHelp.framework in Embed Frameworks */,
+				299E929C20B652F60047E5C7 /* UIKitHelp.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -84,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				299E929B20B652F60047E5C7 /* UIKitHelp.framework in Frameworks */,
 				292C414D20AD176800FA1006 /* TurtleKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,0 +1,11 @@
+framework module TurtleKit {
+  umbrella header "TurtleKit.h"
+
+  export *
+  module * { export * }
+}
+
+module TurtleKit.Swift {
+    header "TurtleKit-Swift.h"
+    requires objc
+}

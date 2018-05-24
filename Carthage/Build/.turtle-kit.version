@@ -1,0 +1,18 @@
+{
+  "Mac" : [
+
+  ],
+  "watchOS" : [
+
+  ],
+  "tvOS" : [
+
+  ],
+  "commitish" : "cd099bf8986ced597e78326cf23e12a78790c61e",
+  "iOS" : [
+    {
+      "name" : "TurtleKit",
+      "hash" : "c75c605d1ba019019489994fc0d2433a313770c4463cbc33fd97d53b17e455a0"
+    }
+  ]
+}

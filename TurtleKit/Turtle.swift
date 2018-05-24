@@ -1,18 +1,18 @@
 import UIKit
 
 public enum Turtle {
-    case button(title: String, action: () -> Void)
+    case button(title: String, isActive: Bool, action: () -> Void)
     indirect case combined(axis: TurtleViewAxis, turtles: [Turtle])
     
 }
 
 extension Turtle {
   
-    public func render() -> TurtleView {
+    public func render() -> UIView {
         
         switch self {
-        case .button(let title, let action):
-            return TurtleButton.init(title: title, action: action)
+        case .button(let title, let isActive, let action):
+            return TurtleView(title: title, isActive: isActive, action: action)
         case .combined(let axis, let turtles):
             let tviews = turtles.map { $0.render() }
             return TurtleSetView.init(views: tviews, axis: axis)

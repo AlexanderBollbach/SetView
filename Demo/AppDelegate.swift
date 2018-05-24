@@ -17,37 +17,42 @@ class DemoViewController: UIViewController {
     
     var demoView: UIView!
     
+    let layers = [("layer1", 0), ("layer2", 1)]
+    var sel = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let t = Turtle.combined(
-            axis: .horizontal,
-            turtles: [
-                Turtle.button(title: "foo") {
-                    print("foo")
-                },
-                Turtle.button(title: "bar") {
-                    print("bar")
-                },
-                ]
-        )
         
-        print(t)
-
-        demoView = t.render()
         
-        view.addSubview(demoView)
+        
+        
+        
+        render()
         
     }
     
-    override func viewDidAppear(_ animated: Bool) {
+    func render() {
         
+        view.subviews.forEach { $0.removeFromSuperview() }
         
-        
+        Turtle.combined(
+            axis: .vertical,
+            turtles:
+            layers.map { layer in
+                Turtle.button(
+                    title: layer.0,
+                    isActive: layer.1 == sel,
+                    action: { [unowned self] in
+                        self.sel = layer.1
+                        self.render()
+                    }
+                )
+            }
+            
+            )
+            .render()
+            .pinTo(superView: view)
     }
     
-    override func viewDidLayoutSubviews() {
-        
-        demoView.frame = view.bounds
-    }
 }

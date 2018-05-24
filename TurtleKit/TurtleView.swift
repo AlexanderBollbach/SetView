@@ -8,45 +8,38 @@ public enum TurtleViewAxis {
 
 public class TurtleView: UIView {
     
-  
-    
-    init() {
-        super.init(frame: .zero)
-
-        backgroundColor = .green
-    }
-    
-    public required init?(coder aDecoder: NSCoder) { fatalError() }
-}
-
-class TurtleButton: TurtleView {
-    
     private let action: () -> Void
-   
-    init(title: String, action: @escaping () -> Void) {
+    
+    init(
+        title: String,
+        isActive: Bool,
+        action: @escaping () -> Void
+        ) {
         
-        self.action = action
-        
-        super.init()
-        
-        let label = UILabel.init()
+        let label = UILabel()
         label.textAlignment = .center
         label.textColor = .white
         label.text = title
+        
+        self.action = action
+        
+        super.init(frame: .zero)
+        
         label.pinTo(superView: self)
+        backgroundColor = isActive ? UIColor.darkGray : UIColor.lightGray
     }
-   
-    required init?(coder aDecoder: NSCoder) { fatalError() }
     
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+    public required init?(coder aDecoder: NSCoder) { fatalError() }
+    
+    public override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.action()
     }
 }
 
-class TurtleSetView: TurtleView {
+class TurtleSetView: UIView {
     
-    init(views: [TurtleView], axis: TurtleViewAxis) {
-        super.init()
+    init(views: [UIView], axis: TurtleViewAxis) {
+        super.init(frame: .zero)
         
         let sv = UIStackView.init(arrangedSubviews: views)
         sv.distribution = .fillEqually

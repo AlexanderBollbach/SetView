@@ -40,7 +40,7 @@ class DemoViewController: UIViewController {
             axis: .vertical,
             turtles:
             layers.map { layer in
-                Turtle.button(
+                Turtle.view(
                     title: layer.0,
                     isActive: layer.1 == sel,
                     action: { [unowned self] in

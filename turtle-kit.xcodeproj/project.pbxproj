@@ -19,6 +19,8 @@
 		29AD556920BA041E006BF3C2 /* UIKitHelp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29AD556820BA041E006BF3C2 /* UIKitHelp.framework */; };
 		29AD556A20BA041E006BF3C2 /* UIKitHelp.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 29AD556820BA041E006BF3C2 /* UIKitHelp.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		29AD556D20BB1020006BF3C2 /* TextFieldClosureSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29AD556C20BB1020006BF3C2 /* TextFieldClosureSupport.swift */; };
+		29AD557020BB5584006BF3C2 /* SliderWithText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29AD556E20BB5583006BF3C2 /* SliderWithText.swift */; };
+		29AD557120BB5584006BF3C2 /* Slider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29AD556F20BB5583006BF3C2 /* Slider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +66,8 @@
 		2995A02C209ACAE0005D1336 /* Turtle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Turtle.swift; sourceTree = "<group>"; };
 		29AD556820BA041E006BF3C2 /* UIKitHelp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UIKitHelp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		29AD556C20BB1020006BF3C2 /* TextFieldClosureSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldClosureSupport.swift; sourceTree = "<group>"; };
+		29AD556E20BB5583006BF3C2 /* SliderWithText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliderWithText.swift; sourceTree = "<group>"; };
+		29AD556F20BB5583006BF3C2 /* Slider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Slider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,8 @@
 		292E5DA3209FA04B00561451 /* TurtleKit */ = {
 			isa = PBXGroup;
 			children = (
+				29AD556F20BB5583006BF3C2 /* Slider.swift */,
+				29AD556E20BB5583006BF3C2 /* SliderWithText.swift */,
 				2940B87420AD088F0020B858 /* Views */,
 				2995A02C209ACAE0005D1336 /* Turtle.swift */,
 				2995A028209A8810005D1336 /* Style.swift */,
@@ -347,8 +353,10 @@
 				292E5DF7209FAEBF00561451 /* TurtleView.swift in Sources */,
 				292E5DFA209FAEBF00561451 /* Turtle.swift in Sources */,
 				292E5DF8209FAEBF00561451 /* ElementView.swift in Sources */,
+				29AD557020BB5584006BF3C2 /* SliderWithText.swift in Sources */,
 				292E5DF9209FAEBF00561451 /* Style.swift in Sources */,
 				29AD556D20BB1020006BF3C2 /* TextFieldClosureSupport.swift in Sources */,
+				29AD557120BB5584006BF3C2 /* Slider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

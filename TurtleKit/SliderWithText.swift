@@ -1,41 +1,62 @@
 import UIKit
 import UIKitHelp
 
-class SliderWithText: UIView {
+
+struct ViewBuilder {
     
-    var value: Double {
-        didSet { slider.value = value }
-    }
+    var style: Style = Style()
     
-    private let slider = Slider()
-    
-    init(text: String, initialValue: Double = 0, callback: @escaping (Double) -> Void) {
-        
-        value = initialValue
-        
-        super.init(frame: .zero)
+    func makeLabel(title: String) -> UILabel {
         
         let label = UILabel()
-        label.text = text
-        label.pinTo(superView: self)
-       
-        slider.value = value
-        slider.valueChanged = { callback($0) }
-        slider.pinTo(superView: self)
-    }
-    
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        print("touches began")
-    }
-    
-    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
-        print("touches moved")
-    }
-    
-    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        label.textAlignment = .center
+        label.textColor = .white
+        label.text = title
         
-        print("touches end")
+        return label
     }
     
-    required init?(coder aDecoder: NSCoder) { fatalError() }
+    func makeTextField(initialText: String, action: @escaping (String) -> Void) -> UIView {
+        
+        let textField = UITextField.init()
+        textField.text = initialText
+        textField.addTargetClosure { tf in
+            action(tf.text ?? "")
+        }
+    
+        return textField
+    }
+    
+    func makeSlider(title: String, initialValue: Double, action: @escaping (Double) -> Void) -> UIView {
+        
+        let v = UIView()
+        addLabel(title: title, to: v)
+        
+        v.backgroundColor = style.inactiveColor
+        
+        let slider = Slider(fillColor: style.activeColor, orientation: .horizontal, initialValue: initialValue, action: action)
+        slider.value = initialValue
+        slider.valueChanged = action
+        
+        slider.pinTo(superView: v)
+        
+        return slider
+    }
+    
+    func makeButton(title: String, isActive: Bool, action: @escaping () -> Void) -> UIView {
+        
+        let v = Button()
+        v.action = action
+        
+        v.backgroundColor = isActive ? style.activeColor : style.inactiveColor
+        
+        addLabel(title: title, to: v)
+        
+        return v
+    }
+    
+    func addLabel(title: String, to view: UIView) {
+        makeLabel(title: title).pinTo(superView: view)
+    }
 }
+

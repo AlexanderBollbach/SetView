@@ -112,7 +112,7 @@
 			children = (
 				29AD556F20BB5583006BF3C2 /* Slider.swift */,
 				29AD556E20BB5583006BF3C2 /* SliderWithText.swift */,
-				2940B87420AD088F0020B858 /* Views */,
+				2995A024209977FA005D1336 /* TurtleView.swift */,
 				2995A02C209ACAE0005D1336 /* Turtle.swift */,
 				2995A028209A8810005D1336 /* Style.swift */,
 				2995A02A209A8837005D1336 /* ElementView.swift */,
@@ -129,14 +129,6 @@
 				2940B8A920AD0C960020B858 /* UIKitHelp.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		2940B87420AD088F0020B858 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				2995A024209977FA005D1336 /* TurtleView.swift */,
-			);
-			name = Views;
 			sourceTree = "<group>";
 		};
 		29959FF620997702005D1336 = {

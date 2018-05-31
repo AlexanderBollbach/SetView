@@ -13,7 +13,13 @@ class Slider: UIView {
     
     var value: Double = 0.0 { didSet { setNeedsDisplay() } }
     
-    init() {
+    let fillColor: UIColor
+    
+    init(fillColor: UIColor, orientation: Orientation = .horizontal, initialValue: Double, action: @escaping (Double) -> Void) {
+        self.fillColor = fillColor
+        self.valueChanged = action
+        self.value = initialValue
+        self.orientation = orientation
         super.init(frame: .zero)
         self.isOpaque = false
     }
@@ -62,7 +68,7 @@ class Slider: UIView {
             scaled =  CGFloat(value) * bounds.size.width
         }
         
-        ctx.setFillColor(UIColor.blue.cgColor)
+        ctx.setFillColor(self.fillColor.cgColor)
         
         switch orientation {
         case .vertical:

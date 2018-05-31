@@ -6,33 +6,25 @@ public enum TurtleViewAxis {
     case vertical
 }
 
-public class TurtleView: UIView {
+public class Button: UIControl {
     
-    private let action: () -> Void
+    var action: () -> Void = {}
     
-    init(
-        title: String,
-        isActive: Bool,
-        action: @escaping () -> Void
-        ) {
-        
-        let label = UILabel()
-        label.textAlignment = .center
-        label.textColor = .white
-        label.text = title
-        
-        self.action = action
-        
+    init() {
+       
         super.init(frame: .zero)
-        
-        label.pinTo(superView: self)
-        backgroundColor = isActive ? UIColor.darkGray : UIColor.lightGray
+      
+        addTarget(self, action: #selector(tapped), for: .touchUpInside)
     }
     
     public required init?(coder aDecoder: NSCoder) { fatalError() }
     
     public override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.action()
+    }
+    
+    @objc private func tapped() {
+        action()
     }
 }
 

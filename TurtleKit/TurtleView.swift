@@ -19,32 +19,23 @@ public class Button: UIControl {
     
     public required init?(coder aDecoder: NSCoder) { fatalError() }
     
-    public override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        self.action()
+    @objc private func tapped() {
+        animate()
+        action()
     }
     
-    @objc private func tapped() {
-        action()
+    private func animate() {
+        
+        let color = backgroundColor
+        let speed = 0.2
+        
+        UIView.animate(withDuration: speed, animations: { [unowned self] in
+            self.backgroundColor = .white
+        }) { _ in
+            UIView.animate(withDuration: speed, animations: {
+                self.backgroundColor = color
+            })
+        }
     }
 }
 
-class TurtleSetView: UIView {
-    
-    init(views: [UIView], axis: TurtleViewAxis) {
-        super.init(frame: .zero)
-        
-        let sv = UIStackView.init(arrangedSubviews: views)
-        sv.distribution = .fillEqually
-        
-        switch axis {
-        case .horizontal:
-            sv.axis = .horizontal
-        case .vertical:
-            sv.axis = .vertical
-        }
-        
-        sv.pinTo(superView: self, insetBy: 0)
-    }
-    
-    required init?(coder aDecoder: NSCoder) { fatalError() }
-}
